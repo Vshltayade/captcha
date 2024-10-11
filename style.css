@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #454545;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin: auto;
+    width: 500px;
+    padding: 10px 30px;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+}
+.heading{
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: orangered;
+    text-transform: uppercase;
+}
+.captcha{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#captcha{
+    background-image: url('https://www.optacom.com/components/com_breezingforms/images/captcha/backgrounds/bg6.png');
+    width: 360px;
+    height: 50px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+span{
+    color: #ffffffb1;
+    font-size: 30px;
+    font-weight: 500;
+}
+span:nth-child(1){
+    transform: rotate(10deg);
+}
+span:nth-child(2){
+    transform: rotate(0deg);
+}
+span:nth-child(3){
+    transform: rotate(-5deg);
+}
+span:nth-child(4){
+    transform: rotate(-15deg);
+}
+span:nth-child(5){
+    transform: rotate(10deg);
+}
+#refresh{
+    width: 50px;
+    background-color: orangered;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid brown;
+}
+i{
+    font-size: 25px;
+    color: #eaeae9;
+}
+.verify-captcha{
+    padding: 10px 0;
+    display: flex;
+    position: relative;
+}
+input{
+    width: 438px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 8px;
+    border: 2px solid brown;
+    border-radius: 3px;
+}
+#check{
+    position: absolute;
+    top: 15px;
+    right: 6px;
+    width: 70px;
+    height: 30px;
+    font-size: 15px;
+    background-color: orangered;
+    border: 2px solid brown;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #eaeae9;
+}
